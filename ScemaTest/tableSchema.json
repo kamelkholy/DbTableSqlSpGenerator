@@ -1,0 +1,26 @@
+﻿{
+  "Name": "Employee",
+  "Properties": {
+    "name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "address": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "phone": {
+      "type": "string",
+      "maxLength": 11,
+      "pattern": "^01[0-2]{1}[0-9]{8}"
+    }
+  },
+  "PrimaryKey": "id",
+  "SelectBy": [
+    ["name"],
+    ["address"],
+    ["phone"],
+    ["name", "address"],
+    ["name", "phone"]
+  ]
+}

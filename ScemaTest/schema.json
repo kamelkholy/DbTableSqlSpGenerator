@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 50
+    },
+    "address": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 50
+    },
+    "phone": {
+      "type": "string",
+      "pattern": "^01[0-2]{1}[0-9]{8}"
+    },
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": [ "name", "address", "phone" ]
+}
