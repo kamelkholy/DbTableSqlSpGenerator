@@ -3,16 +3,19 @@
   "Properties": {
     "name": {
       "type": "string",
-      "maxLength": 50
+      "maxLength": 50,
+      "nullable": false 
     },
     "address": {
       "type": "string",
-      "maxLength": 50
+      "maxLength": 50,
+      "default": "Tanta"
     },
     "phone": {
       "type": "string",
       "maxLength": 11,
-      "pattern": "^01[0-2]{1}[0-9]{8}"
+      "pattern": "^01[0-2]{1}[0-9]{8}",
+      "unique": true
     }
   },
   "PrimaryKey": "id",

@@ -116,6 +116,11 @@ namespace ScemaTest
                 property["type"].ToString();
         }
 
+        //private static string ApplyConstraints(IDictionary<string, object> property)
+        //{
+        //    string[] constraints = { };
+        //}
+
         private static void AppendParameters(StringBuilder queryBuilder)
         {
             foreach (var property in _tableInformation.Properties)
