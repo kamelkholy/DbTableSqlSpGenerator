@@ -7,7 +7,7 @@ namespace ScemaTest
     {
         public static void Main()
         {
-            var json = File.ReadAllText(@"C:\Users\el7li\RiderProjects\ScemaTest\ScemaTest\tableSchema.json");
+            var json = File.ReadAllText(@"jsonpath...");
             var dbTableInformation = JsonConvert.DeserializeObject<DataModel>(json);
 
             JsonDbInitializer dbInitializer = new JsonDbInitializer(dbTableInformation);
